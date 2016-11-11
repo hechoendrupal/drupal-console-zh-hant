@@ -1,63 +1,60 @@
 # drupal-console-zh-hant
-DrupalConsole Chinese Traditional Language / 在中國傳統
+DrupalConsole Chinese Traditional Language / 繁體中文
 
-# 中文版本
+# 繁體中文版本
 
-## Usage
+## 使用說明
 
-Drupal Console project it's installed per each Drupal 8 website with English language by default.
+為 Drupal 8 安裝 Drupal Console 時，預設語言皆為英文。
 
-To install Drupal Console package for Chinese Traditional language run the following instructions
+要安裝 Drupal Console 繁體中文說明介面，請依照以下指令執行安裝工作。
 
 ```
 $ composer require drupal/console-zh-hant
 ```
 
-### Install Drupal Console
+### 安裝 Drupal Console
 
-To install the appropriate version of Drupal Console project for your drupal installation, run the following composer command
+請執行下列指令，為你的 Drupal 網站安裝相符版本的 Drupal Console。
 
 ```
 $ composer require drupal/console:~1.0 --prefer-dist --optimize-autoloader
 ```
 
-### Install Drupal Console launcher
+### 安裝 Drupal Console 啟動程式
 
-In order to avoid conflicts between Drupal release and have a Drupal Console version between major and minor releases in Drupal,  a Drupal Console launcher was created. n order to facilitate to load the Drupal Console commands available to each
-Drupal 8 website,
- 
-Following the instruction below you could install the global application for Drupal Console launcher. 
+Drupal Console 啟動程式是用來提供一個合適的 Drupal Console 版本給所有使用者，以避免與不同版本的 Drupal 發生相容性問題。要在 Drupal 8 網站下執行 Drupal 指令，您必須依照下列指示安裝全域的 Drupal Console 啟動程式。
 
 ```
 $ curl https://drupalconsole.com/installer -L -o drupal.phar
-# Or 
+# Or
 $ php -r "readfile('https://drupalconsole.com/installer');" > drupal.phar
 
 $mv drupal.phar /usr/local/bin/drupal
 $ chmod +x /usr/local/bin/drupal
 ```
 
-### Contribute
+### 貢獻開源程式碼
 
-If you want to contribute to this translation, you need to follow this steps
+如果你想要一起為此翻譯工作貢獻內容，你需要遵照以下步驟：
 
-- Fork this repository following this link [https://github.com/hechoendrupal/drupal-console-zh-hant#fork-destination-box](https://github.com/hechoendrupal/drupal-console-zh-hant#fork-destination-box)
-- Clone your repostory forked in your local machine.
-- Set up upstream
+- 由此程式庫取得分支（ Fork ） [https://github.com/hechoendrupal/drupal-console-zh-hant#fork-destination-box](https://github.com/hechoendrupal/drupal-console-zh-hant#fork-destination-box) 。
+- 複製分支的程式庫到本地機器。
+- 設定上層來源（ upstream ）
 
-In order to be updated with other contribution you must to setup a connected with main repository using the following git command
+為了取得其他貢獻者的最新翻譯，你必須利用以下 git 指令連結主要程式庫作為上層來源
 
 ```
 $ git remote add upstream git@github.com:hechoendrupal/drupal-console-zh-hant.git
 ```
 
-To fetch the latest contribution before to start, you must run the next commands
+在開始工作之前，你必須執行下列指令取得最新的更新內容
 ```
 $ git fetch upstream
 $ git merge upstream/master
 ```
 
-N.B: Push your changes to your forked repository in order to create PR per day to avoid any conflicts with other contributors.
+須知：為了避免與其他貢獻者提交的翻譯產生衝突，請上傳你當天最新的翻譯到你的分支程式庫並建立 PR
 
 # English Version
 
