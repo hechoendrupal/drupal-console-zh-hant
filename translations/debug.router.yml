@@ -1,0 +1,18 @@
+description: 顯示目前網站應用中建立的途徑
+arguments:
+    route-name: 途徑名稱
+messages:
+    name: 途徑名稱
+    class: 類別路徑
+    route: 途徑
+    path: 路徑
+    defaults: 預設值
+    requirements: Requirements
+    options: 選項
+examples:
+    -
+        description: 'Displays current routes for the application'
+        execution: 'drupal rod'
+    -
+        description: 'Displays details for the route user.page (/user)'
+        execution: 'drupal rod user.page'

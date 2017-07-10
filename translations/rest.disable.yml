@@ -7,3 +7,4 @@ questions:
 messages:
     invalid-rest-id: '找不到符合的 REST ID "%s"'
     success: 'Rest ID "%s" disabled'
+    already-disabled: 'Rest ID "%s" was already disabled'

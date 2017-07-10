@@ -1,8 +1,11 @@
 description: 'Sets up the files for a new multisite install.'
 help: 'The <info>multisite:new</info> command assists in setting up new multisite installs by creating the needed subdirectory and files, and can optionally copy an existing ''default'' installation.'
 arguments:
+    directory: 'Name of directory under ''sites'' which should be created.'
+    uri: 'Site URI to add to sites.php.'
     sites-subdir: 'Name of directory under ''sites'' which should be created.'
 options:
+    copy-default: 'Copies existing site from the default install.'
     site-uri: 'Site URI to add to sites.php.'
     copy-install: 'Copies existing site from the default install.'
 errors:
@@ -20,5 +23,6 @@ errors:
 warnings:
     missing-files: 'No sites/default/files directory found. The files directory will need to be created by hand.'
 messages:
-    copy-install: 'The default install was successfully copied to sites/"%s".'
+    copy-default: 'The default install was successfully copied to "sites/%s".'
     fresh-site: 'The new multisite structure was successfully created at sites/"%s" and is ready for installation.'
+    copy-install: 'The default install was successfully copied to sites/"%s".'

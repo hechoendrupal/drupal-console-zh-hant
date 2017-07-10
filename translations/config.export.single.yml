@@ -1,12 +1,20 @@
 description: 'Export single configuration as yml file.'
 arguments:
+    name: 'Configuration name.'
     config-name: 'Configuration name.'
 options:
     include-dependencies: 'Export dependencies of the configuration as well.'
     simple-configuration: 'Simple configuration'
+    optional: 'Export config as an optional YAML configuration in your module'
+    remove-uuid: 'If set, the configuration will be exported without uuid key.'
+    remove-config-hash: 'If set, the configuration will be exported without the default site hash key.'
     optional-config: 'Export config as an optional YAML configuration in your module'
 questions:
     config-type: 'Configuration type'
+    name: 'Configuration name'
+    optional: 'Export config in module as an optional configuration'
+    remove-uuid: 'Do you want to remove the uuid from this export'
+    remove-config-hash: 'Do you want to remove the default site hash from this export'
     config-name: 'Configuration name'
     optional-config: 'Export config in module as an optional configuration'
 messages:
@@ -14,4 +22,12 @@ messages:
     export: 'Configuration was exported at file "%s".'
     invalid-config-type: 'Invalid config type, please select one of the list'
     invalid-config-name: 'Invalid config name, please select one of the list'
+    config-exported: 'Configuration(s) exported sucessfully'
     config_exported: 'Configuration(s) exported sucessfully'
+examples:
+    -
+        description: 'Provide config settings name to be exported'
+        execution: "drupal config:export:single \\\n  --name=config.settings.name"
+    -
+        description: 'if uuid and/or config hashes will be removed.'
+        execution: "drupal config:export:single \\\n  --name=config.settings.name \\\n  --remove-uuid \\\n  --remove-config-hash\n"

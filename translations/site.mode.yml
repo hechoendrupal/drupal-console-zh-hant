@@ -1,6 +1,8 @@
 description: 切換系統效能設置
 arguments:
     environment: '環境模式名稱 [dev, prod]'
+options:
+    local: 'Use this option for testing PROD config, but using settings.local.php for connect to your local environment'
 messages:
     configuration: 設置名稱
     configuration-key: 設置鍵名（Key）
@@ -12,5 +14,5 @@ messages:
     service-parameter: 參數
     service-value: 值
     error-copying-file: 檔案複製失敗
-    error-writing-file: '檔案複製寫入失敗'
+    error-writing-file: 檔案複製寫入失敗
     services-file-overwritten: 服務（Services）檔案已被覆寫
