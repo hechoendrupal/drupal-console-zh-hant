@@ -22,6 +22,3 @@ questions:
     directory: '輸入一個儲存 Drupal 目錄的名稱'
     composer-release: '請選擇 Drupal 發行版本'
     stable: 是否選擇使用正式版本？
-tips:
-    -
-        tip: '在你的 config.yml 裡頭提供 «true» 給鍵名 «shellexec_output» 可查看 Composer 的執行內容。反之，使用 «false» 以隱藏。'

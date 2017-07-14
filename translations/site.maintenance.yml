@@ -6,3 +6,10 @@ messages:
     maintenance-off: 網站上線中
 errors:
     invalid-mode: 錯誤的維護模式
+examples:
+    -
+        description: 'Switch on maintenance'
+        execution: 'drupal site:maintenance  on'
+    -
+        description: 'Switch off maintenance'
+        execution: "drupal site:maintenance  off\n"

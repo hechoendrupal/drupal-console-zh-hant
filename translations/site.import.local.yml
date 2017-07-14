@@ -14,3 +14,7 @@ questions:
     directory: '輸入將安裝 Drupal 的資料夾名稱'
     name: 輸入網站名稱
     environment: 輸入網站環境模式
+examples:
+    -
+        description: 'Import local drupal project specifying the site name and the path'
+        execution: 'drupal site:import:local  SiteName /private/var/www/vhost/anexusit/drupal8.dev/web'

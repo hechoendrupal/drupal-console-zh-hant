@@ -10,3 +10,7 @@ messages:
 errors:
     no-key: 您必須指定要覆寫系統狀態的鍵名。
     no-value: 您必須指定要覆寫系統狀態的內容。
+examples:
+    -
+        description: 'Override state value specifying the state name and the new value'
+        execution: "drupal state:override  comment.node_comment_statistics_scale \"!!float 1\"\n"

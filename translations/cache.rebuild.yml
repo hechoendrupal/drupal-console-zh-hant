@@ -5,6 +5,7 @@ messages:
     welcome: '歡迎使用 cache:rebuild 命令'
     rebuild: 正在重建快取，請稍後
     completed: 清除快取成功
+    invalid-cache: 'Cache "%s" is invalid.'
     invalid_cache: '快取 "%s" 是無效的'
 questions:
     cache: 選擇快取

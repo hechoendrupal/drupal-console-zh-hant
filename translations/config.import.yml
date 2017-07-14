@@ -16,7 +16,3 @@ examples:
     -
         description: 'Provide a configuration directory'
         execution: "drupal config:import  \\\n  --directory=/path/to/config/dir\n"
-arguments:
-    file: 'Path to an archive file of configuration to import.'
-    directory: 'Path to a directory of configuration to import.'
-    remove-files: 'Remove files after synchronization.'

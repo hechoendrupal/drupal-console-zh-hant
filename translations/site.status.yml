@@ -2,7 +2,7 @@ description: '顯示 Drupal 安裝資訊'
 messages:
     application: 網站應用
     system: 系統資訊
-    hash_salt: 雜湊加值(salt)
+    hash-salt: 'Hash salt'
     console: 'Drupal Console'
     database: 資料庫連接
     driver: Driver
@@ -12,12 +12,25 @@ messages:
     password: 密碼
     theme: 版型
     connection: 連線
+    theme-default: 'Default theme'
+    theme-admin: 'Admin theme'
+    directory: 目錄
+    directory-root: 'Site root directory'
+    directory-temporary: 'Site temporary directory'
+    directory-theme-default: 'Default theme directory'
+    directory-theme-admin: 'Admin theme directory'
+    current-version: 'Current Drupal ("%s")'
+    not-installed: 'Drupal is not installed'
+    hash_salt: 雜湊加值(salt)
     theme_default: 預設版型
     theme_admin: 管理版型
-    directory: 目錄
     directory_root: 網站根目錄
     directory_temporary: 網站暫存目錄
     directory_theme_default: 預設版型目錄
     directory_theme_admin: 管理版型目錄
     current_version: '目前 Drupal ("%s")'
     not_installed: 'Drupal 沒有被安裝'
+examples:
+    -
+        description: 'Get drupal installation status specifying the output format as table'
+        execution: "drupal site:status  \\\n  --format=\"table\"\n"

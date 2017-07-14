@@ -13,3 +13,10 @@ messages:
     regions: 版型區域
     invalid-theme: '版型 "%s" 不存在'
     theme-properties: 屬性
+examples:
+    -
+        description: 'List of themes on the site'
+        execution: 'drupal debug:theme'
+    -
+        description: 'Bartik theme information'
+        execution: 'drupal debug:theme bartik'

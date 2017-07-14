@@ -19,3 +19,7 @@ messages:
     theme-default-success: '版型 "%s" 已安裝成為預設版型'
     disabled-themes: 只有已解除安裝的版型會出現在自動完成列表當中
     invalid-theme-default: 只能指定一個預設版型
+examples:
+    -
+        description: 'Install theme specifying the name'
+        execution: "drupal theme:install  mytheme\n"

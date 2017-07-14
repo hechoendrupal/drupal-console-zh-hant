@@ -5,3 +5,7 @@ messages:
     enter-name: 需填入系統狀態名稱
     state-not-exists: '系統狀態 "%s" 不存在。'
     deleted: '系統狀態 "%s" 已清除完畢'
+examples:
+    -
+        description: 'Delete state specifying the state name'
+        execution: "drupal state:delete  comment.maintain_entity_statistics\n"
