@@ -13,6 +13,7 @@ messages:
     select-release: 請選擇您要下載的發行版本
     outside-drupal: '無法判定所在的 Drupal 目錄。將下載到目前所在目錄，要指定下載目的地請使用 --root'
     error-creating-folder: '無法建立 "%s" 資料夾，請檢查您的資料夾權限'
-tips:
+examples:
     -
-        tip: '在你的 config.yml 裡頭提供 «true» 給鍵名 «shellexec_output» 可查看 Composer 的執行內容。反之，使用 «false» 以隱藏。'
+        description: 'Download theme specifying name and version'
+        execution: "drupal theme:download  Alina 7.x-1.2\n"

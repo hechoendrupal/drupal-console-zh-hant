@@ -8,9 +8,10 @@ options:
     format: 'The output format (txt, xml, json, or md)'
 messages:
     usage: "<comment>Usage:</comment>\n"
-    usage_details: "  command [options] [arguments]\n\n"
+    usage-details: "  command [options] [arguments]\n\n"
     arguments: '<comment>Arguments:</comment>'
     options: '<comment>Options:</comment>'
     help: '<comment>Help:</comment>'
     comment: '<comment>Available commands for the "%s" namespace:</comment>'
     available-commands: '<comment>Available commands:</comment>'
+    usage_details: "  command [options] [arguments]\n\n"

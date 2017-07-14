@@ -5,3 +5,7 @@ messages:
     site: 網站
     directory: 目錄
     site-format: 網站名稱格式為：<連接埠>.<網域>.<路徑>
+examples:
+    -
+        description: 'Displays multisite information'
+        execution: "drupal debug:multisite\n"

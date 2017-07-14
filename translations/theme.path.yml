@@ -1,6 +1,11 @@
 description: 取得版型所在相關或絕對路徑
 arguments:
+    theme: 'Theme name'
     module: 版型名稱（可機讀名稱）
 options:
     absolute: 回傳絕對路徑
 messages: null
+examples:
+    -
+        description: 'Get the path of mytheme'
+        execution: "drupal theme:path  mytheme\n"

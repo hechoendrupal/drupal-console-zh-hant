@@ -11,3 +11,7 @@ messages:
     success: '"%s" 設定已被設為 "%s"'
     missing-file: '遺失 "%s" 設定檔，請嘗試執行 `drupal init`'
     missing-language: 'Provided language: "%s", not found'
+examples:
+    -
+        description: 'Set application language setting value to "es"'
+        execution: 'drupal settings:set  application.language es'

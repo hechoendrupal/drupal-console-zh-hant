@@ -11,3 +11,7 @@ messages:
     module: 模組
     update-n: 更新編號
     post-update: 接續更新函式
+examples:
+    -
+        description: 'List of pending updates'
+        execution: "drupal debug:update\n"

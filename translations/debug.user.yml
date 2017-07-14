@@ -15,3 +15,7 @@ messages:
     username: 使用者
     roles: 角色
     status: 狀態
+examples:
+    -
+        description: 'Users list on the site'
+        execution: "drupal debug:user\n"

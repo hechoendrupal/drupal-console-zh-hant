@@ -25,7 +25,7 @@ questions:
     inputs:
         confirm: 'Do you want to generate a form structure?'
         label: 'Input label'
-        machine_name: 'Input machine name'
+        machine-name: 'Input machine name'
         permission: 'Do you want to generate permissions?'
         type: Type
         invalid: 'Field Type "%s" is invalid.'
@@ -36,6 +36,7 @@ questions:
         weight: 'Weight for input item'
         title: Title
         fieldset: Fieldset
+        machine_name: 'Input machine name'
 errors:
     module-dependency: 'Missing module dependency "%s" is not installed. Try module:install to install it.'
     class-name-empty: 'The Class name can not be empty'
