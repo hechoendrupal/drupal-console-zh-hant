@@ -1,6 +1,8 @@
 description: 'Show the current configuration.'
 arguments:
     name: 'Configuration name.'
+options:
+    show-overridden: 'Show overridden configurations.'
 errors:
     not-exists: 'The configuration "%s" does not exists.'
 examples:
@@ -13,3 +15,6 @@ examples:
     -
         description: 'List all system configuration names.'
         execution: 'drupal config:debug | grep system'
+    -
+        description: 'List all configuration including overridden values.'
+        execution: 'drupal debug:config --show-overridden'

@@ -5,6 +5,8 @@ arguments:
     id: '外掛 ID'
 errors:
     plugin-type-not-found: '找不到 "%s" 此外掛類型。沒有此外掛類型可用的服務（Service）。'
+messages:
+    plugin-info: 'Plugin additional information'
 table-headers:
     plugin-type-name: 外掛類型
     plugin-type-class: 外掛管理器類別
@@ -12,6 +14,7 @@ table-headers:
     plugin-class: 外掛類別
     definition-key: 鍵名
     definition-value: 鍵值
+    setting: Setting
 examples:
     -
         description: 'Displays a list with all the plugins on the current site'

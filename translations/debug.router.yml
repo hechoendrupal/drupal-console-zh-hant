@@ -1,6 +1,8 @@
 description: 顯示目前網站應用中建立的途徑
 arguments:
     route-name: 途徑名稱
+options:
+    pattern: 'Route pattern'
 messages:
     name: 途徑名稱
     class: 類別路徑
@@ -16,3 +18,12 @@ examples:
     -
         description: 'Displays details for the route user.page (/user)'
         execution: 'drupal rod user.page'
+    -
+        description: 'Shows the routes list on the site'
+        execution: 'drupal debug:router'
+    -
+        description: 'Display information on the user.login'
+        execution: 'drupal debug:router user.login'
+    -
+        description: 'Display information for the routes by pattern (/user/login)'
+        execution: 'drupal debug:router --pattern=/user/login'
