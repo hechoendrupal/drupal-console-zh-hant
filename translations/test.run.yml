@@ -2,6 +2,7 @@ description: 執行網站應用中可用的單元測試
 arguments:
     test-class: '要測試的類別 （Class）'
     test-methods: '要測試的類別方法 （Method）'
+    url: 'Test url'
 messages:
     missing-dependency: 缺少必要的模組，無法進行測試
     phpunit-pending: '尚未啟用 PHPUnit test 所需要的邏輯'

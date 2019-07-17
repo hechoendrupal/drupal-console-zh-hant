@@ -7,12 +7,16 @@ arguments:
     name: 'Configuration name'
     key: Key
     value: Value
+options:
+    key: Key
+    value: Value
 messages:
     configuration: 'Configuration name'
     configuration-key: 'Configuration key'
     original: 'Original Value'
     updated: 'Override Value'
     invalid-name: 'Config object "%s", does not exists'
+    invalid-config-file: 'Config file does not exist.'
 examples:
     -
         description: 'Set the Contact module flood limit to 10.'

@@ -3,6 +3,7 @@ options:
     destination: 'Destination directory to copy files'
     override: 覆寫設定檔案
     autocomplete: 'Autocomplete tool files flag.'
+    site: 'Use local site as destination.'
 questions:
     destination: 'Select destination to copy configuration'
     autocomplete: 'Generate autocomplete files'
@@ -13,3 +14,7 @@ questions:
     learning: 'Shows information for learning purposes?'
     generate-inline: 'Show inline representation of the executed command?'
     generate-chain: 'Show chain representation of the executed command?'
+    statistics: 'Allow to collect and send this information to drupalConsole server?'
+messages:
+    statistics: "Help us improve the Drupal Console project, providing information about how you use the application.\nThe colleted information at \"%s\", would be:\n\n- Used language\n- Executed command\n- Generated lines of code\n\nYou could read about our privacy policy at http://drupalconsole.com/privacy.\n"
+    statistics-disable: "You can stop sending information using the following command:\n\ndrupal settings:set statistics.enabled false\n"

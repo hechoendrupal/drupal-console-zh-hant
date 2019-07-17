@@ -1,6 +1,6 @@
 options:
     env: 環境名稱
-    no-debug: 關閉除錯模式
+    debug: 'Switches on debug mode'
     learning: 產生學習用的詳細代碼
     generate-chain: '以 YAML 格式顯示命令執行時的選項和參數，用於連續執行一組命令'
     generate-inline: 將命令執行時的選項和參數顯示成一行，以便後續使用
@@ -17,6 +17,7 @@ options:
     no-ansi: '關閉 ANSI 輸出'
     no-interaction: 不要顯示任何對話問題
     check-fix: 嘗試修復任何遺失的設置.
+    no-debug: 關閉除錯模式
 arguments:
     command: 要執行的命令
 messages:
@@ -29,6 +30,8 @@ messages:
     files:
         generated: 已產生或上傳成功的檔案
         copied: 已複製檔案
+    lines-code: 'Generated lines: %s'
+    path: 'Generation path'
     learning:
         route: "In order to to create pages it is necessary to define routes for them.\nA route maps a URL path to a controller. It defines what function\nor method will be called when a URL is accessed.\nIf the user accesses http://drupal8.dev/{{ route.path }}, the routing\nsystem will look for a route with that path. In this case it will find a\nmatch, and execute the _controller callback. In this case the callback is\ndefined as a classname\n(\"\\Drupal\\{{ module }}\\Controller\\{{ class_name }}\")\nand a method (\"{{ route.method }}\")."
     autocomplete: "Bash or Zsh: 加入這行到您的命令 Shell 設置文件:\n<info>source \"$HOME/.console/console.rc\" 2>/dev/null</info>\n\nFish: 建立一個符號連結\n<info>ln -s ~/.console/drupal.fish ~/.config/fish/completions/drupal.fish</info>\n"
@@ -40,6 +43,9 @@ messages:
 errors:
     invalid-command: '命令 "%s" 沒有定義'
     renamed-command: 'Command "%s" was renamed, use "%s" instead.'
+    drush-command: 'Command "%s" is a Drush command (deprecated). Drupal Console equivalent "%s" was executed instead.'
+    statistics-failed: "The Drupal console failed to send statistics. After 10 attempts, this feature was disabled.\nIf you want to enable it again, use the following command:\n\n<info>drupal settings:set statistics.enabled true</info>\n"
+    statistics-url-failed: "The Drupal console failed to send statistics.\nYou must configure it in the global config.yml, use the following command and choose your preference:\n\n<info>drupal init</info>"
 site:
     messages:
         path: 網站路徑
